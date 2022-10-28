@@ -1,0 +1,15 @@
+version: '3.8'
+services:
+  app:
+    container_name: app
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    restart: on-failure
+    volumes:
+      - ./:/photos_mng
+    command: 'poetry run python manage.py runserver 0.0.0.0:8000'
+    ports:
+      - '8000:8000'
+volumes:
+  photos:

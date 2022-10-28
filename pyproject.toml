@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "photos management"
+version = "0.1.0"
+description = "Simple app for photos management"
+authors = ["IP"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+django = "^4.1.2"
+djangorestframework = "^3.14.0"
+requests = "^2.28.1"
+pydantic = "^1.10.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
